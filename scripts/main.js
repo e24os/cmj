@@ -3,7 +3,7 @@ var gdivEmpresa="";
 var gdivsoftware="";
 var gdivservicios="";
 var gdivdesarrolloweb="";
-var gdivclientes="";
+//var gdivclientes="";
 var gdivcontacto="";
 var giconmenu = "";
 var gpantalla = "";
@@ -40,7 +40,7 @@ var gulmenuprincipal = "";
         var divsoftware=document.getElementById("div_Software");
         var divservicios=document.getElementById("div_servicios");
         var divdesarrolloweb=document.getElementById("div_DesarrolloWeb");
-        var divclientes=document.getElementById("div_clientes");
+        //var divclientes=document.getElementById("div_clientes");
         var divcontacto=document.getElementById("div_Contacto");
         var divcentral=document.getElementById("div_central");
 
@@ -51,7 +51,7 @@ var gulmenuprincipal = "";
         gdivsoftware=divsoftware;
         gdivservicios=divservicios;
         gdivdesarrolloweb=divdesarrolloweb;
-        gdivclientes=divclientes;
+        //gdivclientes=divclientes;
         gdivcontacto=divcontacto;
 
         gdivCaratula.style.display = "inline-block";
@@ -60,7 +60,7 @@ var gulmenuprincipal = "";
         gdivsoftware.style.display="none";
         gdivservicios.style.display="none";
         gdivdesarrolloweb.style.display="none";
-        gdivclientes.style.display="none";
+        //gdivclientes.style.display="none";
         gdivcontacto.style.display="none";
 
        
@@ -68,7 +68,7 @@ var gulmenuprincipal = "";
         var mnusoftware=document.getElementById("mnu_software");
         var mnuservicios=document.getElementById("mnu_servicios");
         var mnudesarrolloweb=document.getElementById("mnu_desarrolloweb");
-        var mnuclientes=document.getElementById("mnu_clientes");
+        //var mnuclientes=document.getElementById("mnu_clientes");
         var mnucontacto=document.getElementById("mnu_contacto");
 
         
@@ -92,7 +92,7 @@ var gulmenuprincipal = "";
         //mnudesarrolloweb.addEventListener("mouseover",menudesarrolloweb,false);
 
         
-        mnuclientes.addEventListener("click",menuclientes,false);
+        //mnuclientes.addEventListener("click",menuclientes,false);
         //mnuclientes.addEventListener("mouseover",menuclientes,false);
 
         
@@ -110,11 +110,28 @@ var gulmenuprincipal = "";
     function menugeneral(){
 
         gdivCaratula.style.display = "inline-block"; 
+
+
+        //var x = document.getElementById("myDIV");
+
+        // Start the animation with JavaScript
+        //function myFunction() {
+          //gdivCaratula.style.WebkitAnimation = "mymove 4s 1"; // Code for Chrome, Safari and Opera
+
+
+            gdivCaratula.style.animation = "mymove 1s 1";     // Standard syntax
+            
+        
+
+
+
+
+
         gdivEmpresa.style.display="none";  
         gdivsoftware.style.display="none";
         gdivservicios.style.display="none";
         gdivdesarrolloweb.style.display="none";
-        gdivclientes.style.display="none";
+        //gdivclientes.style.display="none";
         gdivcontacto.style.display="none";
 
         if (window.matchMedia("(max-width: 1012px)").matches){
@@ -170,7 +187,7 @@ var gulmenuprincipal = "";
             gdivsoftware.style.display="none";
             gdivservicios.style.display="none";
             gdivdesarrolloweb.style.display="none";
-            gdivclientes.style.display="none";
+            //gdivclientes.style.display="none";
             gdivcontacto.style.display="none";
 
         }
@@ -185,7 +202,7 @@ var gulmenuprincipal = "";
             gdivsoftware.style.display="inline-block";
             gdivservicios.style.display="none";
             gdivdesarrolloweb.style.display="none";
-            gdivclientes.style.display="none";
+            //gdivclientes.style.display="none";
             gdivcontacto.style.display="none";
 
         }
@@ -203,7 +220,7 @@ var gulmenuprincipal = "";
             gdivsoftware.style.display="none";
             gdivservicios.style.display="inline-block";
             gdivdesarrolloweb.style.display="none";
-            gdivclientes.style.display="none";
+            //gdivclientes.style.display="none";
             gdivcontacto.style.display="none";
 
         }
@@ -220,13 +237,13 @@ var gulmenuprincipal = "";
             gdivsoftware.style.display="none";
             gdivservicios.style.display="none";
             gdivdesarrolloweb.style.display="inline-block";
-            gdivclientes.style.display="none";
+            //gdivclientes.style.display="none";
             gdivcontacto.style.display="none";
 
         }
 
 
-        function menuclientes(){
+       /*  function menuclientes(){
 
 
             gdivCaratula.style.display = "none";
@@ -241,7 +258,7 @@ var gulmenuprincipal = "";
             gdivcontacto.style.display="none";
 
         }
-
+ */
 
         function menucontacto(){
 
@@ -254,7 +271,7 @@ var gulmenuprincipal = "";
             gdivsoftware.style.display="none";
             gdivservicios.style.display="none";
             gdivdesarrolloweb.style.display="none";
-            gdivclientes.style.display="none";
+            //gdivclientes.style.display="none";
             gdivcontacto.style.display="inline-block";
 
         }
